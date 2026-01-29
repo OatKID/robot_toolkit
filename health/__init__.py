@@ -1,3 +1,3 @@
-from .health import health_check
+from .health import *
 
-__all__ = ["health_check"]
+__all__ = ["Health"]

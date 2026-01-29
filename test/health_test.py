@@ -1,7 +1,8 @@
 import pytest
 
-from health import health_check
 
 def test_health_check():
-    result = health_check()
-    assert result == {"status": "healthy"}
+    from health.health import Health
+    health = Health()
+    status = health.health_check()
+    assert status == {"status": "healthy"}

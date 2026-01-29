@@ -1,6 +1,7 @@
 from robot.api.deco import keyword
 
-@keyword("Health Check")
-def health_check():
-    """Performs a health check and returns the status."""
-    return {"status": "healthy"}
+class Health:
+    @keyword("Health Check")
+    def health_check(self):
+        """Performs a health check and returns the status."""
+        return {"status": "healthy"}
