@@ -1,3 +1,4 @@
-from file_util import *
+"""File utility module for Robot Framework."""
+from .FileUtil import FileUtil
 
 __all__ = ['FileUtil']
